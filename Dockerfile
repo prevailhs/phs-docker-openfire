@@ -17,7 +17,17 @@ ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre \
     DAEMON_DIR=/usr/share/openfire \
     DAEMON_LIB=/usr/share/openfire/lib
 
-EXPOSE 3478/tcp 3479/tcp 5222/tcp 5223/tcp 5229/tcp 7070/tcp 7443/tcp 7777/tcp 9090/tcp 9091/tcp
+# List port
+EXPOSE 5222/tcp
+EXPOSE 3478/tcp
+EXPOSE 3479/tcp
+EXPOSE 5223/tcp
+EXPOSE 5229/tcp
+EXPOSE 7070/tcp
+EXPOSE 7443/tcp
+EXPOSE 7777/tcp
+EXPOSE 9090/tcp
+EXPOSE 9091/tcp
 
 # For use by psql to initialize db
 VOLUME /usr/share/openfire/resources/database
